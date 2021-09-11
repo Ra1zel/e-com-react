@@ -1,0 +1,106 @@
+.CategoryProductsList__main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.CategoryProductsList__content {
+  padding: 50px 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.CategoryProductsList__card {
+  position: relative;
+  margin: 0 auto;
+  width: 85%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #e5e5e5;
+  box-shadow: 0 3px 15px 4px rgb(0, 0, 0, 0.2);
+  border-radius: 15px;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+.CategoryProductsList__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.CategoryProductsList__text-h4 {
+  margin-left: 0px;
+  font-size: 100%;
+  font-weight: 400;
+}
+.CategoryProductsList__image {
+  margin: 25px;
+  width: 225px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.CategoryProductsList__image img {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.CategoryProductList__icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 100;
+  height: 60px;
+  width: 60px;
+  transform: translateY(-50%);
+}
+
+@media only screen and (min-width: 400px) and (max-width: 625px) {
+  .CategoryProductsList__card {
+    height: 110px;
+    width: 90%;
+  }
+  .CategoryProductsList__image {
+    width: 140px;
+    height: 90px;
+    margin: auto 5px;
+    border-radius: 5px;
+  }
+  .CategoryProductsList__text-h4 {
+    font-size: 75%;
+  }
+  .CategoryProductList__icon {
+    width: 20px;
+    height: 20px;
+    transform: translateY(-75%);
+  }
+}
+@media only screen and (max-width: 400px) {
+  .CategoryProductsList__card {
+    height: 100px;
+    width: 90%;
+  }
+  .CategoryProductsList__image {
+    width: 125px;
+    height: 80px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  .CategoryProductsList__text-h4 {
+    font-size: 65%;
+  }
+  .CategoryProductList__icon {
+    width: 20px;
+    height: 20px;
+    transform: translateY(-75%);
+  }
+} ;

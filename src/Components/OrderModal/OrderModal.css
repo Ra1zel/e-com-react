@@ -1,0 +1,114 @@
+.modal-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+  width: 500px;
+  height: 300px;
+  z-index: 20;
+  border-radius: 15px;
+  background-color: white;
+  transition: all 0.2s ease-in-out;
+}
+.modal-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 93%;
+  margin: 0 auto;
+}
+.modal-title {
+  font-size: 100%;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.modal-content {
+  font-size: 80%;
+  font-weight: 400;
+}
+.modal-qty-btn-container {
+  margin-bottom: 10px;
+}
+.modal-qty-btn {
+  height: 50px;
+  width: 60px;
+  background-color: #e5e5e5;
+  border: none;
+  margin: none;
+  margin-top: -3px;
+  font-weight: 400;
+  font-size: 130%;
+  cursor: pointer;
+}
+.modal-qty-btn:first-of-type {
+  margin-right: 15px;
+  border-radius: 15px 0 0 15px;
+}
+.modal-qty-btn:last-of-type {
+  border-radius: 0 15px 15px 0;
+}
+.modal-qty-btn:disabled {
+  background-color: white;
+  cursor: not-allowed;
+}
+.modal-action-btn {
+  cursor: pointer;
+  width: 125px;
+  height: 45px;
+  background-color: #ff2947;
+  color: white;
+  font-size: 70%;
+  font-weight: 100;
+  border: 0;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  margin-top: 5px;
+}
+
+.ModalOpen {
+  animation: openModal 0.2s linear;
+}
+
+.ModalClosed {
+  animation: closeModal 0.2s linear;
+}
+@keyframes openModal {
+  0% {
+    opacity: 0;
+    transform: translate(-80%, -65%);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-60%, -65%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -65%);
+  }
+}
+
+@keyframes closeModal {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -65%);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translate(-80%, -65%);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-100%, -65%);
+  }
+}
+@media (max-width: 550px) {
+  .modal-content-container {
+    align-items: flex-start;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .modal-wrapper {
+    width: 300px;
+  }
+}

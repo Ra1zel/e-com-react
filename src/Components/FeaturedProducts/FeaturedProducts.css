@@ -1,0 +1,22 @@
+.section-heading {
+  text-align: center;
+  font-size: 150%;
+  font-weight: 300;
+}
+.section-heading span {
+  padding-bottom: 2px;
+  border-bottom: 2px solid rgb(194, 194, 194);
+}
+
+.product-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 500px) {
+  .section-heading {
+    font-size: 100%;
+  }
+}

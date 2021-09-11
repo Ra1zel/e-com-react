@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+.productView__main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.productView__content {
+  padding: 50px 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.productView__card {
+  margin: 0 7.5%;
+  width: 85%;
+  height: auto;
+  padding-inline: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e5e5e5;
+  box-shadow: 0 0px 30px 2px rgba(175, 175, 175, 0.815);
+  border-radius: 15px;
+}
+.productView__text {
+  margin-left: 25px;
+}
+.productView__text-p {
+  margin-left: 25px;
+  font-weight: 300;
+  font-size: 100%;
+}
+.productView__text-p:last-of-type {
+  margin-bottom: 30px;
+}
+.productView__text-h4 {
+  margin-top: 1px;
+  font-size: 150%;
+  letter-spacing: 1px;
+  margin-left: 25px;
+  font-weight: 400;
+  font-size: 130%;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+.productView__button {
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  margin-left: 20px;
+  background-color: #ff2947;
+  color: white;
+  font-size: 70%;
+  font-weight: 400;
+  border: 0;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  margin-top: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.productView__button:disabled {
+  cursor: not-allowed;
+  background-color: #ce8b93d7;
+}
+.productView__image {
+  margin: 0 25px;
+  width: 375px;
+  height: 275px;
+  overflow: hidden;
+  border-radius: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.productView__image img {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1267px) {
+  .productView__card {
+    padding-inline: 0px;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 850px) {
+  .productView__card {
+    flex-direction: column-reverse;
+    height: 500px;
+    padding: 0;
+  }
+  .productView__text {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .productView__card {
+    flex-direction: column-reverse;
+    height: 450px;
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .productView__text {
+    margin-left: 0;
+  }
+  .productView__image {
+    margin: 25px 0;
+    width: 250px;
+    height: 180px;
+  }
+}

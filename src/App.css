@@ -1,5 +1,6 @@
 .main-content {
-  margin: 0 5px;
+  font-size: 25px;
+  margin: 0;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
